@@ -24,6 +24,7 @@ function done() {
     for (var i = 0; i < clCh.length; i++)clCh[i].style.display = 'block';
     butt1.className = 'done';
     butt2.classList.remove('active');
+    document.getElementById('btn3').classList.remove('vision');
 }
 
 //Оставляет активные задачи
@@ -32,6 +33,7 @@ function active() {
     for (var i = 0; i < clCh.length; i++)clCh[i].style.display = 'none';
     butt2.className = 'active';
     butt1.classList.remove('done');
+    document.getElementById('btn3').classList.remove('vision');
 }
 
 //Показывает ВСЕ задачи
